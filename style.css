@@ -1,0 +1,316 @@
+/* إعدادات أساسية */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #003C61);
+    color: #fff;
+    direction: rtl; /* تمت الإضافة هنا */
+}
+
+/* الرأس */
+header {
+    background-color: #000;
+    padding: 30px 10%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00AEEF;
+}
+
+/* قسم رئيسي */
+section {
+    padding: 80px 10%;
+    img.small {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+    }
+    
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+/* الأزرار */
+.cta-button {
+    background-color: #0061A8;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00AEEF;
+    transform: scale(1.05);
+}
+
+/* صفحة السيارات - نفس الكود الحالي */
+.cars {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.car-item {
+    background-color: #fff;
+    border-radius: 15px;
+    color: #000;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-info h3 {
+    font-size: 1.8em;
+    color: #000;
+}
+
+.car-info p {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.car-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+}
+.car-info ul li {
+    color: #ffffff; /* يجعل النص أبيض */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.car-small {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* صفحة التواصل */
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 60px 10%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    outline: 2px solid #0061A8;
+}
+
+/* التذييل */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 30px 10%;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #00AEEF;
+}
+
+/* قسم المنتجات المميزة */
+.featured-products {
+    text-align: center;
+    padding: 40px 20px; /* إضافة بعض الحشوة للقسم */
+}
+
+.featured-products h2 {
+    font-size: 2.5em; /* تكبير عنوان القسم قليلاً */
+    margin-bottom: 30px; /* زيادة المسافة السفلية للعنوان */
+    color: #00AEEF; /* استخدام لون مميز للعنوان */
+}
+
+.product-list {
+    display: flex; /* تفعيل Flexbox */
+    flex-wrap: wrap; /* السماح بانتقال العناصر لسطر جديد */
+    justify-content: center; /* توسيط المنتجات في الحاوية */
+    gap: 30px; /* المسافة بين بطاقات المنتجات (أفقيا وعموديا) */
+}
+
+.product {
+    background-color: rgba(40, 40, 40, 0.8); /* خلفية أغمق قليلاً للمنتج للتباين */
+    border-radius: 12px; /* زيادة استدارة الحواف */
+    padding: 25px; /* زيادة الحشوة الداخلية للمنتج */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* تعديل الظل ليكون أوضح */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(50% - 15px); /* عرض كل منتج (100% / 2 منتجات) - (نصف الـ gap) */
+    /* إذا أردت 3 منتجات في الصف: width: calc(33.333% - (30px * 2 / 3)); */
+    box-sizing: border-box; /* لضمان أن padding و border لا تزيد من العرض المحدد */
+    display: flex;
+    flex-direction: column; /* لترتيب محتوى المنتج عمودياً */
+    align-items: center; /* توسيط محتوى المنتج أفقياً */
+}
+
+.product:hover {
+    transform: translateY(-12px); /* زيادة تأثير الرفع عند المرور */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* زيادة وضوح الظل عند المرور */
+}
+
+.product img {
+    width: 100%; /* الصورة تأخذ عرض حاوية المنتج */
+    max-width: 280px; /* زيادة الحد الأقصى لعرض الصورة لجعلها أكبر */
+    height: auto; /* الحفاظ على نسبة أبعاد الصورة */
+    border-radius: 8px;
+    margin-bottom: 20px; /* زيادة المسافة تحت الصورة */
+    object-fit: cover; /* لضمان ملء الصورة للمساحة المخصصة بشكل جيد */
+}
+
+.product h3 {
+    font-size: 2em; /* تكبير عنوان المنتج */
+    margin-bottom: 12px;
+    color: #00AEEF;
+}
+
+.product p {
+    font-size: 1.1em; /* تكبير نص الوصف قليلاً */
+    margin-bottom: 25px; /* زيادة المسافة تحت الوصف */
+    line-height: 1.7;
+    color: #e0e0e0; /* لون أفتح قليلاً للنص لسهولة القراءة */
+    flex-grow: 1; /* للسماح للفقرة بأخذ المساحة المتاحة، مما يساعد على محاذاة الأزرار */
+}
+
+.product .cta-button {
+    margin-top: auto; /* يدفع الزر إلى أسفل البطاقة */
+    padding: 12px 25px; /* زيادة حشوة الزر */
+    font-size: 1.1em; /* تكبير خط الزر */
+}
+
+/* استعلام وسائط للشاشات الأصغر لجعل المنتجات تحت بعضها */
+@media (max-width: 768px) {
+    .product {
+        width: calc(100% - 15px); /* منتج واحد في كل صف على الشاشات الصغيرة */
+        /* أو يمكنك استخدام width: 90%; أو ما شابه مع justify-content: center; */
+    }
+}
+
+.product {
+    background-color: rgba(255, 255, 255, 0.05); /* خلفية خفيفة لكل منتج */
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 40px); /* عرض كل منتج، يمكنك تعديل هذا حسب الحاجة. هنا مثال لمنتجين في السطر */
+    /* إذا أردت ثلاة منتجات في السطر, استخدم calc(33.333% - 40px) مع تعديل الـ gap إذا لزم الأمر */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* لمحاذاة محتوى المنتج في الوسط */
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px); /* تأثير بسيط عند مرور المؤشر */
+}
+
+.product img { /* استهداف جميع الصور داخل .product */
+    width: 100%; /* جعل الصورة تملأ عرض حاوية المنتج */
+    max-width: 250px; /* حد أقصى لعرض الصورة، يمكنك تعديله */
+    height: auto; /* للحفاظ على نسبة أبعاد الصورة */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #00AEEF; /* لون مميز لاسم المنتج */
+}
+
+.product p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* يمكنك إزالة أو تعديل هذا إذا لم تعد تستخدمه أو إذا أردت سلوكًا مختلفًا */
+
